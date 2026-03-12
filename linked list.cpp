@@ -36,7 +36,7 @@ void insertAtEnd(Node* &head, int val){
     while(temp->next!=NULL){
         temp=temp->next; 
     }
-    // now temp is pointing to the last node
+    
     temp->next = newNode;
 }
 
@@ -54,24 +54,12 @@ while(count<(position-1)){
     count++;
 }
 
-//prev is pointing to the node that should come before new node
+
 newNode->next = prev->next;
 prev->next = newNode;
 }
 int main(){
 
-    // Node* node1 = new Node(1);
-    // Node* node2 = new Node(2);
-    // node1->next = node2;
-    // Node* head = node1;
-    // traverse(head);
-    // insertAtHead(head, 3);
-    // traverse(head);
-    // insertAtEnd(head, 4);
-    // traverse(head);
-    // insertAtMiddle(head, 5, 3);
-    // traverse(head);
-    
 
     Node* head = NULL;
     insertAtEnd(head, 1);
@@ -79,5 +67,6 @@ int main(){
     insertAtEnd(head, 3);
     traverse(head);
     return 0;
+
 
 }
