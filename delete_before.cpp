@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<n;i++) cin >> a[i];
 
     int pos;
-    cin >> pos;
+    cin >> pos; 
 
     if(pos > 0 && pos <= n){
         int* temp = new int[n-1];
