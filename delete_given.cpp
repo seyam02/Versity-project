@@ -14,7 +14,7 @@ int main() {
         for(int i=0,j=0;i<n;i++){
             if(i != pos) temp[j++] = a[i];
         }
-        delete[] a;
+        delete[] a;   
         a = temp;
         n--;
     }
