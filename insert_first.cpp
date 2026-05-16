@@ -11,6 +11,7 @@ int main() {
 
     int* temp = new int[n+1];
     temp[0] = x;
+    
     for(int i=0;i<n;i++) temp[i+1] = a[i];
 
     delete[] a;
