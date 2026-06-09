@@ -13,7 +13,7 @@ int main() {
         int* temp = new int[n-1];
         for(int i=0, j=0;i<n;i++){
             if(i != pos-1) temp[j++] = a[i];
-        }
+        }  
         delete[] a;
         a = temp;
         n--;
